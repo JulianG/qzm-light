@@ -1,0 +1,117 @@
+.border {
+  border: 1px solid red;
+}
+
+.question-slide {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+}
+
+.question-slide {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  width: 100vw;
+  height: 56vw;
+  padding: 0.5rem;
+}
+
+.question-slide .hud {
+  grid-area: 1 / 1 / 2 / 8;
+  text-align: left;
+}
+
+.question-slide .controls {
+  grid-area: 9 / 1 / 10 / 8;
+}
+
+.question-slide.with-picture .picture {
+  grid-area: 1 / 8 / 10 / 17;
+  background-size: cover; /* contain; */
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+.question-slide.with-picture .question-text {
+  grid-area: 2 / 1 / 9 / 8;
+}
+
+.question-slide.with-picture .choice {
+  text-align: left;
+}
+.question-slide.with-picture .choice-0 {
+  grid-area: 5 / 1 / 6 / 8;
+}
+.question-slide.with-picture .choice-1 {
+  grid-area: 6 / 1 / 7 / 8;
+}
+.question-slide.with-picture .choice-2 {
+  grid-area: 7 / 1 / 8 / 8;
+}
+.question-slide.with-picture .choice-3 {
+  grid-area: 8 / 1 / 9 / 8;
+}
+
+.question-slide.with-picture .answer {
+  grid-area: 8 / 1 / 9 / 8;
+}
+
+.question-slide.no-picture .question-text {
+  grid-area: 2 / 2 / 9 / 16;
+}
+
+.question-slide.no-picture .question-text {
+  grid-area: 2 / 2 / 9 / 16;
+}
+
+.question-slide.no-picture .choice-0 {
+  grid-area: 5 / 2 / 6 / 16;
+}
+.question-slide.no-picture .choice-1 {
+  grid-area: 6 / 2 / 7 / 16;
+}
+.question-slide.no-picture .choice-2 {
+  grid-area: 7 / 2 / 8 / 16;
+}
+.question-slide.no-picture .choice-3 {
+  grid-area: 8 / 2 / 9 / 16;
+}
+.question-slide.no-picture .answer {
+  grid-area: 8 / 2 / 9 / 16;
+}
+
+.question-slide h1,
+.question-slide h2,
+.question-slide h3,
+.question-slide h4,
+.question-slide p,
+.question-slide li {
+  margin: 0;
+  text-shadow: 0em 0em 0.2em rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+li {
+  font-size: 4rem;
+}
+
+div {
+  font-size: 2rem;
+}
